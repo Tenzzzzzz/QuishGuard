@@ -6,7 +6,9 @@ from bs4 import BeautifulSoup
 import base64
 import mailparser
 import hashlib
-
+import imgkit
+from html2image import Html2Image
+import email
 
 image_assets = {}
 html_body = ""
@@ -45,7 +47,39 @@ def walk_the_email(eml_path):
                     "payload": part.get_payload(decode=True)
                 }
 
+    with open(eml_path, 'rb') as f:
+        msg = email.message_from_binary_file(f, policy=policy.default)
+
+    # 2. Extract ONLY the HTML body
+    # preferencelist=('html') ensures you get the rich version if it exists
+    html_part = msg.get_body(preferencelist=('html'))
+    clean_html = html_part.get_content()
+
+    # 3. Convert to Photo
+    hti = Html2Image()
+    hti.screenshot(html_str=clean_html, save_as='clean_email.png')
+
+    print("------------------------------------- nexistheemail\n","--------------------")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     analysis_manifest = {"metadata": {"subject": msg['subject']}, "fragments": []}
+
+
+
+
 
     if html_body:
         soup = BeautifulSoup(html_body, 'html.parser')
