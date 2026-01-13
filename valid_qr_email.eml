@@ -1,0 +1,56 @@
+Subject: Security Verification
+From: security@test.com
+To: user@test.com
+Content-Type: multipart/alternative;
+ boundary="===============1148344913704787502=="
+
+--===============1148344913704787502==
+MIME-Version: 1.0
+Content-Type: multipart/related;
+ boundary="===============5792091092529125002=="
+
+--===============5792091092529125002==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+    <html>
+        <body>
+            <h2 style=3D"color: #d9534f;">Action Required</h2>
+            <p>Please scan this code to verify your account:</p>
+            <div style=3D"border: 1px solid #ddd; display: inline-block; padd=
+ing: 10px;">
+                <img src=3D"cid:my_qr_code_ref" alt=3D"QR Code" width=3D"200"=
+ height=3D"200">
+            </div>
+            <p>ID: my_qr_code_ref</p>
+        </body>
+    </html>
+   =20
+
+--===============5792091092529125002==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <my_qr_code_ref>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAADB0lEQVR4nO1bbY6jMAy1DVJ/grQH
+6FHSG8yR5ky9ATnKHGAk+DkSyCs7BFasFFKtloGJn6oCyVNlxdjxR4oMr8DTS3QA46dBO/NbGD8N
+2pnfwvhp0M78FsZPg3bmtzB+CeuDM+o4PNQAHhEBhjj3OFCefNAL3IL5jgU9AD4GRPD3EQAa+YJK
+p/jc8meDCuUPs4VyJ+b83k8ITtUdrLs+u/y5ICid34wAvq0YH+Kkv1+eNGhnfovS+Ri22Qjuvlme
+PdAuo2x+PV8b2WAHAPYIwDBgGEb3lMfj5CHj/4/18Roit7r1imuGSpRaydcUwud/+/1sUD5VYfwc
+++XlmX1biTl/Ifv7F86GvcLWMw06JR8llgoBlWPRKqxGDLInT2a/19QvrMktd5rwNvIod66fnTR3
+MqYpcnc2+cn4efHVZ40AN5bS1chav1K4ToKsj2i+tp4Xft+cuGbfSrjVVhzuApoxZkpnlj8HVKR/
+ZilNasEKHI+gj2G8C/5Z3LX55wvqtw4X/6Z78FiDb/sYMQ+/xuiXK8Zzyk/Gz1ufCcFj2H8B/J1Z
+mwyhHG3x82XftzreSKzc9ADu2UprYaolyBrRseTEb0uKfDb5yfgZ+kX5aFWS1UkHh9x8ik3PqkWJ
+pG09r/m+sWS4+M4sXaObhM7aH6wk8BLDlrEj5ckHvcAt2H7dRz2yx2rU0iS459oanBAcW/3qovqF
+OQ2KGdBatYpZ75wfzbyzyU/Gz7Pfm7jhVjZh7Q+2IR/CYL/90oGw9UyDTsnnpfSMqF0jNex+Ppi1
+nt45q/z5oMLPT7IGVJL/ajs4psPjsfLkg17gFsx3S5HSy1k6rVSCRs3xEOWx8mSD8qkl9wddqD/H
+0EqK0HOnEJaatMVXP4DPHUyoUfP8qEq2/Pen6BfDqY2h/vMktL+P8WDl2eXfAxXKb7QXGA/EhqNX
+g/4/5SbeW236SHlyQdnMsvuDqJcKtKGg9iv15zqctJMRqz9fUr9o/+++lL7I+ElQevovGD8N2pnf
+wvhp0M78FsZP4+rr8xuFEllZ1bwwPQAAAABJRU5ErkJggg==
+
+--===============5792091092529125002==--
+
+--===============1148344913704787502==--

@@ -10,10 +10,27 @@ import imgkit
 from html2image import Html2Image
 import email
 
+
+"""
 image_assets = {}
 html_body = ""
+"""
+
+def inline_cid_images(html, image_assets):
+    resolved_html = html
+    for cid, asset in image_assets.items():
+
+        b64_payload = base64.b64encode(asset["payload"]).decode("ascii")
+        data_uri = f"data:{asset['mimetype']};base64,{b64_payload}"
+
+        target_str = f"cid:{cid}"
+        resolved_html = resolved_html.replace(target_str, data_uri)
+
+    return resolved_html
 
 def walk_the_email(eml_path):
+    image_assets = {}
+    html_body = ""
     with open(eml_path, "rb") as f:
         msg = BytesParser(policy=policy.default).parse(f)
 
@@ -50,14 +67,15 @@ def walk_the_email(eml_path):
     with open(eml_path, 'rb') as f:
         msg = email.message_from_binary_file(f, policy=policy.default)
 
-    # 2. Extract ONLY the HTML body
-    # preferencelist=('html') ensures you get the rich version if it exists
     html_part = msg.get_body(preferencelist=('html'))
-    clean_html = html_part.get_content()
+    if html_part:
+        clean_html = html_part.get_content()
+        resolved_html = inline_cid_images(clean_html, image_assets)
+        print("resolved_html =>",resolved_html)
 
-    # 3. Convert to Photo
-    hti = Html2Image()
-    hti.screenshot(html_str=clean_html, save_as='clean_email.png')
+        hti = Html2Image()
+        hti.screenshot(html_str=resolved_html, save_as='clean_email.png')
+
 
     print("------------------------------------- nexistheemail\n","--------------------")
 
@@ -121,8 +139,8 @@ def walk_the_email(eml_path):
 """
 tests
 """
-manifest, assets = walk_the_email("mail.eml")
+manifest, assets = walk_the_email("pdf_attack.eml")
 print(manifest)
-print(assets)
+print("assets",assets)
 print(json.dumps(manifest, indent=4))
 print(f"\n[+] Total Inline Images Found: {len(assets)}")

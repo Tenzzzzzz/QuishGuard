@@ -1,0 +1,78 @@
+Subject: Offer Inside: Background Image Test
+From: marketing@test.com
+To: user@test.com
+Content-Type: multipart/alternative;
+ boundary="===============3394804812884321493=="
+
+--===============3394804812884321493==
+MIME-Version: 1.0
+Content-Type: multipart/related;
+ boundary="===============1303849324456594871=="
+
+--===============1303849324456594871==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+    <html>
+    <body>
+        <h2>Exclusive Offer</h2>
+        <p>Your viewer might not see this if it blocks background images.</p>
+
+        <!-- The Trap: Using CSS background instead of img tag -->
+        <div style=3D"
+            width: 350px;=20
+            height: 350px;=20
+            background-image: url('cid:bg_qr_ref');=20
+            background-size: contain;=20
+            background-repeat: no-repeat;
+            border: 1px solid #ccc;">
+
+            <!-- We can even put fake text over it to confuse OCR if we wante=
+d -->
+            <br><br>
+        </div>
+
+        <p>Reference: #BG-CSS-ATTACK</p>
+    </body>
+    </html>
+   =20
+
+--===============1303849324456594871==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <bg_qr_ref>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+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
+QmCC
+
+--===============1303849324456594871==--
+
+--===============3394804812884321493==--

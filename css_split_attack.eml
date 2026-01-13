@@ -1,0 +1,174 @@
+Subject: Invoice: Payment Required (CSS Technique)
+From: billing@service.com
+To: user@target.com
+Content-Type: multipart/alternative;
+ boundary="===============1383645424904842926=="
+
+--===============1383645424904842926==
+MIME-Version: 1.0
+Content-Type: multipart/related;
+ boundary="===============6186910564887636673=="
+
+--===============6186910564887636673==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+    <html>
+    <body>
+        <p>Please scan to pay invoice #99283</p>
+
+        <!-- Relative container acts as the canvas -->
+        <div style=3D"position: relative; width: 660px; height: 660px; border=
+: 1px dashed red;">
+           =20
+        <img src=3D"cid:p1"=20
+             style=3D"position: absolute; top: 0px; left: 0px; width: 330px; =
+height: 330px; padding:0; margin:0; border:none;">
+       =20
+        <img src=3D"cid:p2"=20
+             style=3D"position: absolute; top: 0px; left: 330px; width: 330px=
+; height: 330px; padding:0; margin:0; border:none;">
+       =20
+        <img src=3D"cid:p3"=20
+             style=3D"position: absolute; top: 330px; left: 0px; width: 330px=
+; height: 330px; padding:0; margin:0; border:none;">
+       =20
+        <img src=3D"cid:p4"=20
+             style=3D"position: absolute; top: 330px; left: 330px; width: 330=
+px; height: 330px; padding:0; margin:0; border:none;">
+       =20
+        </div>
+
+        <p>Security Check via CSS Positioning</p>
+    </body>
+    </html>
+   =20
+
+--===============6186910564887636673==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p1>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKCAIAAAD0S4FSAAAEw0lEQVR4nO3cQYrkMBQFwdJQ97+y
+5wZFgzDfSkfsG7vcSrR767quD1D0b/oFgLvIG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKG
+LHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVv
+yJI3ZMkbsuQNWfKGLHlDlrwhS96Q9Z168Fpr6tH80XVdr/pWa+NMTn2r3+/s9oYseUOWvCFL3pAl
+b8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwha2xrbcfbNsB22LR787ly
+e0OWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QdeTW
+2tu2x07cANv5zju/923PvX7+rdsbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL
+3pAlb8iSN2TJG7LkDVnyhqzXba3xfFO7Zb39P7c3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy
+5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVm21ki5b7fsvo23+7bl3N6QJW/IkjdkyRuy5A1Z8oYs
+eUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZL1ua21nE4vnm9o8W7ftpe1we0OW
+vCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QdeTW2s6u
+Fc83tZd2DT13x+/nur0hS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5
+Q5a8IUvekCVvyBrbWtvZtYI7ztU6cMPv9+91e0OWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUve
+kCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QtaY2z3Z2rd62pzXlxLMx5XrkdqDbG7LkDVnyhix5Q5a8
+IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oas79SDp/bSnrmJ9ZtduvYO
+37rtPLu9IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAl
+b8haU9tjU7tWb9vxOtHbdvjWbWfD7Q1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUve
+kCVvyJI3ZMkbsuQNWfKGLHlD1vdzoKktrqm9tKkNsClTe2nrwJ223891e0OWvCFL3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QdeTW2ombZ1Pv/Lbdst5e2s7v
+dXtDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekLWm
+9qV2TO2WnejE/+/bdvju4/aGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IevIrbWpLa6pb3Xifph3fsK5cntDlrwhS96QJW/IkjdkyRuy5A1Z8oYsecOn
+6j/L856XO07SbQAAAABJRU5ErkJggg==
+
+--===============6186910564887636673==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p2>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKCAIAAAD0S4FSAAAEtUlEQVR4nO3cUW6jMABF0XjE/rfM
+7IBWsSj4+pzfqAm1uPLfG+d5foCif08/AHAXeUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUve
+kCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7Lk
+DVnyhix5Q5a8IUvekCVvyJI3ZMkbssb1x+d5fv/V44cvv+l3Z8w884ynzpm/8dT77PaGLHlDlrwh
+S96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IctM1ys2sWasuGm3
+orHgObu9IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAl
+b8g6rlegZvalZsxsUz31zCtucc146pxnnAue8wy3N2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkb
+suQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1ZxzsXs3bbLYM7uL0hS96QJW/IkjdkyRuy5A1Z8oYs
+eUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyDruWyZbcS/tnctz8B23N2TJG7LkDVny
+hix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Zx/XHu22PzWy8OSve
+xu0NWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q9Zx
+vRC24vbYzO/O/L8r2m0fbjdub8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlD
+lrwhS96QJW/IkjdkyRuyxvW62G67Zbv9v7S5vSFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVv
+yJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IOj6v9NTm2czfPvXMM7+7m3OzPTy3N2TJG7LkDVnyhix5
+Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z4771KdtjlDbPxkNbejPc
+3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkfT8f
+lTSziTWzxTVjt2fm99zekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOW
+vCFL3pAlb8iSN2SN+1avZna8bHG9/5xX3Gkbm72Tbm/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iS
+N2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbssY796V228TazYo7bStye0OWvCFL3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QNXZbn3rnBthuVnzrxoL7f25v
+yJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG3bdWntq
+e2zFLa4ZK57zirt052bvldsbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRs+Vf8BWFWSf9OFqQ4AAAAA
+SUVORK5CYII=
+
+--===============6186910564887636673==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p3>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKCAIAAAD0S4FSAAAEwElEQVR4nO3dQU7DMABFwRpx/yuH
+G0SACa6fZ/aladInb6rPuK7rdZIxxq9fu+pezVzzjJnP65rf4Xv18dDfBZaTN2TJG7LkDVnyhix5
+Q5a8IUvekCVvyPpc9can/app1S/edvxV4o6/llvl/vM6vSFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8
+IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IGqf918vTdst23LSbseMe3nOc3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/Ikjdkfb42NLOJtWp7bNUG
+WG8/7Dljw/2/e05vyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAl
+b8iSN2TJG7K23FpbZdVe2qoNsFXXfNq23Hjs+Tq9IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96Q
+JW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iytfYDp+2lnbbTNuM9n6/TG7LkDVnyhix5Q5a8IUve
+kCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oas47bWTttLW7VbtuNe2irP3Wen
+N2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Zy7bW
+dtzTcs3s9Z10ekOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlD
+lrwhS96QtWxrbYyx6q35h225Vbt0M9+ra8P9v3tOb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3
+ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuylm2tzehtYvU27Va972nfjXF7n53ekCVvyJI3ZMkb
+suQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2RtubW24wbYjNP2w2Y+
+747P97l75fSGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5
+Q5a8Ieu4rTU4Zx/O6Q1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkb
+suQNWfKGLHlDlq01+AMze2kzO233nN6QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7Lk
+DVnyhix5Q5a8IUvekCVvyJI3ZB23tfbcrhW73+dr4ppnttZmXnvP6Q1Z8oYseUOWvCFL3pAlb8iS
+N2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlD1pZba89tU7H7Mzpt4+2e0xuy5A1Z
+8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGrLHjNhXwHU5v
+yJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVny
+hix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvOFV9QXl
+85iI9cc5dwAAAABJRU5ErkJggg==
+
+--===============6186910564887636673==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p4>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAAUoAAAFKCAIAAAD0S4FSAAAEw0lEQVR4nO3cQY7bMBQFQTPw/a+s
+nCBGAEKmf6tqO4uxZDa4Md66ruv1b2ut1wmfP1XPxPd86jPvuB52rv6c/gDAXeQNWfKGLHlDlrwh
+S96QJW/IkjdkyRuyfvSHRxN/TXXqF1F+Pfadd3UN/MWb2xuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGrPWbC1ITN7Embrydes8T39VEbm/IkjdkyRuy
+5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbslZvx2vHqQ2wp5l4
+rtbA8+z2hix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOW
+vCHr/fnPT9seO7WJtWPi9thE18Cz4faGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAl
+b8iSN2TJG7LkDVnyhix5Q5a8IWvdtyB1agNsx6n9MM/7HWvgmdzh9oYseUOWvCFL3pAlb8iSN2TJ
+G7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwha/U2wCZ+5qfZ+Y4mvufr0Jl0e0OW
+vCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96Q9b5vBWri
+XtopE5935/uduJc2kdsbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iS
+N2TJG7LkDVnyhqz3b25i2eL6zruauPG243rY87q9IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96Q
+JW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8havW2qiTttT3vPp553HTobp57X7Q1Z8oYseUOWvCFL
+3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlD1vq8AnVqT8uOV9vTzsYp
+bm/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyJI3ZMkbslZv
+E+tp/3fHxHc10XXo+3V7Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z
+8oYseUOWvCFL3pC1Pq9ATdwP2/G0DTDa59ntDVnyhix5Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlD
+lrwhS96QJW/IkjdkyRuy5A1Z8oYseUPWum9fyk4bd3Am/5/bG7LkDVnyhix5Q5a8IUvekCVvyJI3
+ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oastbNcdZ+dnbZTfvNN3ufUlt7TNvx2uL0h
+S96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5Q5a8IUvekCVvyPrRrTVg
+n9sbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb8iSN2TJG7LkDVnyhix5
+Q5a8IUvekCVvyJI3ZMkbsuQNWfKGLHlDlrwhS96QJW/IkjdkyRuy5A1Z8oYseUOWvCFL3pAlb3hV
+/QVQW7xqiu5jEgAAAABJRU5ErkJggg==
+
+--===============6186910564887636673==--
+
+--===============1383645424904842926==--
