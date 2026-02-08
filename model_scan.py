@@ -296,7 +296,7 @@ class QuishingScanner:
 
 
 def scan(url):
-    scanner = QuishingScanner("url_detection_model.json")
+    scanner = QuishingScanner("model/url_detection_model.json")
     r=scanner.scan(url)
     return r
 if __name__ == "__main__":

@@ -23,9 +23,15 @@ def receive_email_file():
             images_to_be_scanned.append(i["payload"])
         for i in images_to_be_scanned:
             qrs_data.append(Parse_And_Extract.prepare_qr_for_model(i))
+        if qrs_data:
+            print("there_is_soemthing")
+        else:
+            print("there_is_nothing")
         for url in qrs_data:
-            response = model_scan.scan(url)
-            print(response)
+            print("#",url)
+        return qrs_data
+           # response = model_scan.scan(url)
+           #print(response)
 
 
 
