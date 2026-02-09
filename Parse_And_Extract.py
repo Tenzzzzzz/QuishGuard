@@ -25,13 +25,6 @@ def inline_cid_images(html, image_assets):
 
 
 
-
-
-
-
-
-
-
 def walk_the_email(eml_path):
     image_assets = {}
     html_body = ""

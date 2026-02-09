@@ -187,7 +187,6 @@ class transformationFunctions():
         except Exception as e:
             raise customException(e, sys)
 
-    # First Directory Length
     def fd_length(self, url):
         try:
             urlpath = urlparse(url).path
@@ -273,7 +272,6 @@ def process_and_save_features(input_csv, output_file):
         df['count_digits'] = df['url'].apply(obj.digit_count)
         df['count_letters'] = df['url'].apply(obj.letter_count)
 
-        # Save as Excel or CSV
         if output_file.endswith('.xlsx'):
             df.to_excel(output_file, index=False)
         else:
@@ -283,7 +281,7 @@ def process_and_save_features(input_csv, output_file):
         print(f" Features extracted and saved to: {output_file}")
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
 
 
 if __name__ == "__main__":

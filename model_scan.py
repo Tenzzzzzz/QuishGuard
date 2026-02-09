@@ -54,11 +54,9 @@ class transformationFunctions():
         except Exception as e:
             raise customException(e, sys)
 
-    from urllib.parse import urlparse
 
     def abnormal_url(self, url):
         try:
-            # 1. Handle URLs without http/https prefix so urlparse doesn't fail
             if not url.startswith(('http://', 'https://')):
                 parse_url = 'http://' + url
             else:
@@ -67,17 +65,14 @@ class transformationFunctions():
             hostname = urlparse(parse_url).hostname
 
             if not hostname:
-                return 1  # Abnormal: No hostname could be parsed
+                return 1
 
-            # 2. Check if the parsed hostname actually exists in the original URL
-            # If it's NOT in the URL, that's abnormal (return 1)
             if str(hostname) not in url:
                 return 1
             else:
-                return 0  # Normal (return 0)
+                return 0
 
         except Exception as e:
-            # If parsing fails entirely, it's suspicious
             return 1
 
     def count_dot(self, url):
@@ -104,7 +99,6 @@ class transformationFunctions():
     def no_of_dir(self, url):
         try:
             urldir = urlparse(url).path
-            #     print(urldir)
             return urldir.count('/')
         except Exception as e:
             raise customException(e, sys)
