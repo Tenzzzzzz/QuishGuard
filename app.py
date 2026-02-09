@@ -1,4 +1,3 @@
-import requests
 from flask import Flask, request, jsonify
 import Parse_And_Extract
 import model_scan
