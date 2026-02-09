@@ -31,10 +31,27 @@ def walk_the_email(eml_path):
 
 
     msg = email.message_from_binary_file(eml_path, policy=policy.default)
+    from_header = msg.get('From', '')
+    sender_domain = ""
+    if '@' in from_header:
+        sender_domain = from_header.split('@')[-1].strip(' <>')
+    received_headers = msg.get_all('Received', [])
+    sender_ip = "Unknown"
+    if received_headers:
+        import re
+        ip_match = re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', received_headers[0])
+        if ip_match:
+            sender_ip = ip_match.group()
 
-
-
-    analysis_manifest = {"metadata": {"subject": msg['subject']}, "fragments": []}
+    analysis_manifest = {
+        "metadata": {
+            "subject": msg['subject'],
+            "sender": from_header,
+            "domain": sender_domain,
+            "sender_ip": sender_ip
+        },
+        "fragments": []
+    }
     for part in msg.walk():
         content_type = part.get_content_type()
 
