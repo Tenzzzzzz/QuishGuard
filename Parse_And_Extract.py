@@ -1,15 +1,10 @@
-import json
 from email import policy
 import os
-from email.parser import BytesParser
 from bs4 import BeautifulSoup
 import base64
 import hashlib
 from html2image import Html2Image
 import email
-from email.message import EmailMessage
-import io
-import qrcode
 import cv2
 import numpy as np
 
@@ -116,7 +111,13 @@ def walk_the_email(eml_path):
             binary_data_of_html_image = f.read()
             b = binary_data_of_html_image
         os.remove(temp_path)
-    return analysis_manifest, image_assets,b
+
+    image_assets["Html_Photo"] = {
+        "hash": hashlib.sha256("Html_Photo".encode("utf-8")).hexdigest(),
+        "mimetype": "Email_Photo",
+        "disposition": "None",
+        "payload": b}
+    return analysis_manifest, image_assets
 
 
 def prepare_qr_for_model(binary_data):
@@ -127,7 +128,7 @@ def prepare_qr_for_model(binary_data):
     retval, decoded_info, points, straight_qrcode = detector.detectAndDecodeMulti(gray)
 
     if retval:
-        return decoded_info
+        return decoded_info[0]
     else:
         return None
 
@@ -137,23 +138,10 @@ def prepare_qr_for_model(binary_data):
 
 
 
-"""
 
 
-manifest, assets,sh = walk_the_email("attachment_only.eml")
-print(manifest)
-print("assets",assets)
-print(json.dumps(manifest, indent=4))
-#so now i have the images assests + the photo, we need to get all images and try to detect the qr code
 
-print("ss",sh)
-#p2=prepare_qr_for_model(sh)
 
-for i in assets.values():
-    processed_qr=prepare_qr_for_model(i["payload"])
-    print("data=>",processed_qr[0])
-    print(type(processed_qr))
-"""
 if __name__ == "__main__":
     pass
 

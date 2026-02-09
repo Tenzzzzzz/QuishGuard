@@ -280,7 +280,7 @@ def process_and_save_features(input_csv, output_file):
             df.to_csv(output_file, index=False)
 
         logging.info(f"Successfully saved features to {output_file}")
-        print(f"✅ Features extracted and saved to: {output_file}")
+        print(f" Features extracted and saved to: {output_file}")
 
     except Exception as e:
         print(f"❌ Error: {e}")

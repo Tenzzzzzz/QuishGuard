@@ -11,27 +11,34 @@ def receive_email_file():
     file = request.files['file']
 
     if file.filename == '':
-        return jsonify({'error': 'No file provided'})
+        return jsonify({'error': 'File name not provided'})
 
     if file and file.filename.endswith( '.eml'):
         print("hi")
+        rs={}
         images_to_be_scanned=[]
         qrs_data=[]
-        manifest, assets,photo =Parse_And_Extract.walk_the_email(file)
-        images_to_be_scanned.append(photo)
+        manifest, assets =Parse_And_Extract.walk_the_email(file)
         for i in assets.values():
             images_to_be_scanned.append(i["payload"])
+
+
         for i in images_to_be_scanned:
-            qrs_data.append(Parse_And_Extract.prepare_qr_for_model(i))
-        if qrs_data:
-            print("there_is_soemthing")
-        else:
-            print("there_is_nothing")
-        for url in qrs_data:
-            print("#",url)
-        return qrs_data
-           # response = model_scan.scan(url)
-           #print(response)
+            R=Parse_And_Extract.prepare_qr_for_model(i)
+            print(R)
+            if(R!=None):
+                qrs_data.append(R)
+
+        for i in qrs_data:
+            response = model_scan.scan(i)
+            if int(response)==1:
+                str="malicious"
+            else:
+                str="benign"
+            rs[i]=str
+
+        return rs
+
 
 
 

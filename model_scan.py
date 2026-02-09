@@ -27,7 +27,6 @@ class customException(Exception):
         super().__init__(self, error_message)
         self.error_message = error_message_detail(error_message, error_detail=error_detail)
 
-    # __str__ is to print() the value
     def __str__(self):
         return self.error_message
 
@@ -40,10 +39,10 @@ class transformationFunctions():
         try:
             ip_pattern = (
                 r'('
-                r'(?:[01]?\d\d?|2[0-4]\d|25[0-5])(?:\.(?:[01]?\d\d?|2[0-4]\d|25[0-5])){3}|'  # Standard IPv4
-                r'(?:0x[0-9a-fA-F]{1,2}\.){3}(?:0x[0-9a-fA-F]{1,2})|'  # Hexadecimal IPv4
-                r'(?:[a-fA-F0-9]{1,4}:){1,7}[a-fA-F0-9]{1,4}|'  # Standard IPv6
-                r'::(?:[a-fA-F0-9]{1,4}:){0,7}[a-fA-F0-9]{1,4}'  # Compressed IPv6 (::)
+                r'(?:[01]?\d\d?|2[0-4]\d|25[0-5])(?:\.(?:[01]?\d\d?|2[0-4]\d|25[0-5])){3}|' 
+                r'(?:0x[0-9a-fA-F]{1,2}\.){3}(?:0x[0-9a-fA-F]{1,2})|'  
+                r'(?:[a-fA-F0-9]{1,4}:){1,7}[a-fA-F0-9]{1,4}|'  
+                r'::(?:[a-fA-F0-9]{1,4}:){0,7}[a-fA-F0-9]{1,4}'  
                 r')'
             )
             match = re.search(ip_pattern, url)  # Ipv6
@@ -236,16 +235,14 @@ class transformationFunctions():
             raise customException(e, sys)
 
 
-s=0
+
 class QuishingScanner:
     def __init__(self, model_path):
-        # 1. Load the trained XGBoost Brain
         self.model = xgb.XGBClassifier()
         self.model.load_model(model_path)
         self.transform = transformationFunctions()
 
     def extract_features(self, url):
-        # Must match the EXACT order used during training
         features = []
         features.append(self.transform.having_ip_address(url))
         features.append(self.transform.abnormal_url(url))
@@ -267,7 +264,6 @@ class QuishingScanner:
         features.append(self.transform.fd_length(url))
 
 
-        # TLD Length helper
         try:
             res = get_tld(url, as_object=True, fail_silently=True)
             tld_len = len(res.tld) if res else 0
@@ -282,16 +278,7 @@ class QuishingScanner:
 
     def scan(self, url):
         features = self.extract_features(url)
-        # Get probability (e.g., [0.02, 0.98])
-        prob = self.model.predict_proba(features)[0]
         prediction = self.model.predict(features)[0]
-
-        status = "🚨 MALICIOUS" if prediction == 1 else "✅ SAFE"
-        confidence = prob[1] if prediction == 1 else prob[0]
-
-        print(f"\nURL: {url}")
-        print(f"Result: {status}")
-        print(f"Confidence: {confidence * 100:.2f}%")
         return prediction
 
 
@@ -299,5 +286,6 @@ def scan(url):
     scanner = QuishingScanner("model/url_detection_model.json")
     r=scanner.scan(url)
     return r
+
 if __name__ == "__main__":
     pass

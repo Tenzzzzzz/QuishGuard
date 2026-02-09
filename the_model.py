@@ -8,7 +8,7 @@ import os
 file_path = "features_processed.csv"
 
 if not os.path.exists(file_path):
-    print(f"❌ Error: Could not find {file_path}")
+    print(f"Could not find {file_path}")
 else:
     df = pd.read_csv(file_path)
 
