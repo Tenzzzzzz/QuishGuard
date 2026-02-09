@@ -1,0 +1,115 @@
+Subject: Split QR - CSS Position
+From: test@test.com
+To: victim@test.com
+Content-Type: multipart/alternative;
+ boundary="===============0983271477054060464=="
+
+--===============0983271477054060464==
+MIME-Version: 1.0
+Content-Type: multipart/related;
+ boundary="===============0373005346909199537=="
+
+--===============0373005346909199537==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><body>
+    <p>Split QR using CSS Positioning:</p>
+    <div style=3D"position:relative;width:370px;height:370px;border:1px solid=
+ red;">
+        <img src=3D"cid:p1" style=3D"position:absolute;top:0px;left:0px;width=
+:185px;height:185px;margin:0;padding:0;"><img src=3D"cid:p2" style=3D"positio=
+n:absolute;top:0px;left:185px;width:185px;height:185px;margin:0;padding:0;"><=
+img src=3D"cid:p3" style=3D"position:absolute;top:185px;left:0px;width:185px;=
+height:185px;margin:0;padding:0;"><img src=3D"cid:p4" style=3D"position:absol=
+ute;top:185px;left:185px;width:185px;height:185px;margin:0;padding:0;">
+    </div>
+    </body></html>
+
+--===============0373005346909199537==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p1>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAALkAAAC5CAIAAAD7zwkLAAACjElEQVR4nO3dQW6DMBRAwbjq/a9M
+91mgl1LApjPbRAiiJyN9Wc7Ytu0FwVf5EmiFD1hXqLRCpRUqrVBphUorVFqh0gqVVqi0QqUVKq1Q
+aYVKK1RaodIKlVaotEKlFSqtUGmFSitUWqHSCpVWqLRCpRUqrVBphUorVFqh0gqVVqi0QqUVKq1Q
+aYXq+3WTMcbrWbbdk4KPPO9dV35jXaHSCpVWqLRCpRUqrVBphUorVFph+rntvjn/LW2cNms+8ryX
+/VbWFSqtUGmFSitUWqHSCpVWqLRCpRUWn9uuOD9dcfex/bacwjuISitUWqHSCpVWqLRCpRUqrfDo
+ue2KtgMT4ctOQthnXaHSCpVWqLRCpRUqrVBphUorVFqhMre9yLjpfNv9Tz+6snWFSitUWqHSCpVW
+qLRCpRUqrVBphUfPbec8/XaJ2etH3q5sXaHSCpVWqLRCpRUqrVBphUorVFph8bntXee9nmfcNHs9
+wn5bfsk7iEorVFqh0gqVVqi0QqUVKq1QjRX3rv4348DM9w+vbF2h0gqVVqi0QqUVKq1QaYVKK1Ra
+Yfr9tnfNIle0zbEb17pCpRUqrVBphUorVFqh0gqVVqi0wvRz20lmkZPMi7cDv8Zl92xdodIKlVao
+tEKlFSqtUGmFSitUWmHx823nnPmO086oPXLP501131hXqLRCpRUqrVBphUorVFqh0gqVVlj8nIQl
+znudZNZ82QnF1hUqrVBphUorVFqh0gqVVqi0QqUVKvttl5/qDvttmY13EJVWqLRCpRUqrVBphUor
+VFqhGpft1vxDS+xOXeKJnG/LKbyDqLRCpRUqrVBphUorVFqh0gqPntueZ87/Qxtz3JV1hUorVFqh
+0gqv6AdOXIWKvh3BZAAAAABJRU5ErkJggg==
+
+--===============0373005346909199537==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p2>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAALkAAAC5CAIAAAD7zwkLAAACl0lEQVR4nO3dwWoCMRRAUafM///y
+dN+FXI0x0Z6zK7TTKpdXeIR4XNd1g+CnfBNohQeYK1RaodIKlVaotEKlFSqtUGmFSitUWqHSCpVW
+qLRCpRUqrVBphUorVFqh0gqVVqi0QqUVKq1QaYVKK1RaodIKlVaotEKlFSqtUGmFSitUWqHSCpVW
+qLRCdf75+jiO2xyrLtKd94pWWfVOmitUWqHSCpVWqLRCpRUqrVBphUorPLu3vb8TvL8DHdknznvy
+fXt+LNux5a7ZXKHSCpVWqLRCpRUqrVBphUorVFphv/O2e+4i7/u+08cjzBUqrVBphUorVFqh0gqV
+Vqi0QqUVVpy3HTkzO+/JvIq5QqUVKq1QaYVKK1RaodIKlVaotEJ1vvBI6chmduTJvIe5QqUVKq1Q
+aYVKK1RaodIKlVaotEJ1/lmJjmxX521m3X67A3OFSitUWqHSCpVWqLRCpRUqrVBphWfP287bn+55
+v+2ef9WezBUqrVBphUorVFqh0gqVVqi0QqUVVpy33fOuA3csvIq5QqUVKq1QaYVKK1RaodIKlVao
+tEJ1vHCtuedp3JEX+H2vaIS5QqUVKq1QaYVKK1RaodIKlVaotEJ13h7xibfffuI9CdeWn8NmrlBp
+hUorVFqh0gqVVqi0QqUVKq3w7N523nZ1npHf+9/OzI4wV6i0QqUVKq1QaYVKK1RaodIKlVaYc0/C
+nmdm93zyteh+hnnMFSqtUGmFSitUWqHSCpVWqLRCpRU+7bztyIZ01V0H1weemR1hrlBphUorVFqh
+0gqVVqi0QqUVKq1QHV9/b8CeN9iOcN6W3fkfRKUVKq1QaYVKK1RaodIKlVaozrctAVfdObDqvoJj
+2s+uYq5QaYVKK1Ra4Rb9AvbZmnji99+yAAAAAElFTkSuQmCC
+
+--===============0373005346909199537==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p3>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAALkAAAC5CAIAAAD7zwkLAAACnElEQVR4nO3dwW7iMBRAUTzq//9y
+upoNi+gik8ZJztkTEFwZ9OrGY9u2F/+NMU55M7bdT2GRV/XvlBfBFWmFSitUWqH6eZ1k5vfaWb/H
+t4c97xvrCpVWqLRCpRUqrVBphUorVFqh0grLz23X/Cv8mrPmsfu8M+/kR4+1rlBphUorVFqh0gqV
+Vqi0QqUVKq1w6/22M1eemZ9uJ81ej7vyR5+CdYVKK1RaodIKlVaotEKlFSqtUGmFapz1P/iL3Nfq
+ErPXGV/8fK0rVFqh0gqVVqi0QqUVKq1QaYVKKyy/33bGzB7S4+51MJacvbpPAifwHUSlFSqtUGmF
+SitUWqHSCpVWuPXcdt9xO4jHBe9vO3PlN9YVKq1QaYVKK1RaodIKlVaotEKlFZa/T8LTjCVPWnMu
+GYfwHUSlFSqtUGmFSitUWqHSCpVWePC5ZGfZDjvxbJH3yrpCpRUqrVBphUorVFqh0gqVVqi0wsXv
+k7DmLuCxxvz0LNYVKq1QaYVKK1RaodIKlVaotEKlFS4+t9235glga/riTl7rCpVWqLRCpRUqrVBp
+hUorVFqh0gq3nts+zTYxe/3imWbWFSqtUGmFSitUWqHSCpVWqLRCpRUqc9s/sk3s5D1uf7H9thzC
+dxCVVqi0QqUVKq1QaYVKK1Ra4dZz2/vdzWB8b1fsR1fe9/a81hUqrVBphUorVFqh0gqVVqi0QqUV
+Lj63vd8JYGPJyexHrCtUWqHSCpVWqLRCpRUqrVBphUorVON+e1c5iHWFSitUWqHSCpVWqLRCpRUq
+rVBphUorVFqh0gqVVqi0QqUVKq1QaYVKK1RaodIKlVaotEKlFSqtUGmFSitUWqHSCpVWqLRCpRUq
+rVBphUorVFqh0gqVVqi0QqUVXtEvGCl5h3FcTSQAAAAASUVORK5CYII=
+
+--===============0373005346909199537==
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-ID: <p4>
+MIME-Version: 1.0
+Content-Disposition: inline
+
+iVBORw0KGgoAAAANSUhEUgAAALkAAAC5CAIAAAD7zwkLAAACl0lEQVR4nO3dS27jMBBAQXOQ+19Z
+sx1kIbyxrJBUqvb+JHhoGB2GHsdxvLIxxutd5y90/sz/9SY/6Mq7GpMee58/U16VHWmFSitUWqH6
++rFPVfd91rvPrE+RazJXqLRCpRUqrVBphUorVFqh0gqVVqjGL/87+/N+ovuYK1RaodIKlVaotEKl
+FSqtUGmFSiu8e952lvv+S+3KY2edET6W3PmaK1RaodIKlVaotEKlFSqtUGmFSitU49uKcNYZ0h1v
+UTg3606J+5grVFqh0gqVVqi0QqUVKq1QaYVKK9xzT8IVs773YdYz73ii9py5QqUVKq1QaYVKK1Ra
+odIKlVaotEI1HnD+9HmOJbe65gqVVqi0QqUVKq1QaYVKK1RaodIK795vu+ZNCOd2PCO8I3OFSitU
+WqHSCpVWqLRCpRUqrVBphd/0vWRXnvl529X7mCtUWqHSCpVWqLRCpRUqrVBphUorVOPHboPd8Xu6
+7Hz/Za5QaYVKK1RaodIKlVaotEKlFSqtcM/3ks3azO7oeNxJXnOFSitUWqHSCpVWqLRCpRUqrVBp
+hWp8cL046zbYK9tkJ3k7c4VKK1RaodIKlVaotEKlFSqtUGmF3e5JWHN/eu648BPteJLXXKHSCpVW
+qLRCpRUqrVBphUorVFqh+vrgEnDNmwHW3Mwek3a+V5grVFqh0gqVVqi0QqUVKq1QaYVKK8y4J+GK
+5+1AjzV+sR9krlBphUorVFqh0gqVVqi0QqUVKq2w296W9ZkrVFqh0gqVVqi0QqUVKq1QaYVKK1Ra
+odIKlVaotEKlFSqtUGmFSitUWqHSCpVWqLRCpRUqrVBphUorVFqh0gqVVqi0QqUVKq1QaYVKK1Ra
+odIKlVaotEKlFSqt8Ir+Ak9wskh75z7/AAAAAElFTkSuQmCC
+
+--===============0373005346909199537==--
+
+--===============0983271477054060464==--
