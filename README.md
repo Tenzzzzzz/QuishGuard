@@ -20,7 +20,7 @@ Fast Inference and integration: Real-time classification in under 10ms per URL.
 
 * Transformation: Converts the extracted URL into 15+ numerical features (length, special character ratios, tld, etc.).
 
-* Classification: The XGBoost model calculates the "Malicious Probability".
+* Classification: The XGBoost model detects the Malicious URLs.
 
 * Response: Returns a JSON report with a safety verdict and other details about the email.
 #  API Usage
@@ -80,3 +80,9 @@ python feature_extraction.py
 python the_model.py
 python app.py
 ```
+# Future Roadmap
+1-
+2-
+3-
+# Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any feature additions or bug fixes.
