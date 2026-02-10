@@ -11,7 +11,6 @@ Massive Scale: Trained on a robust corpus of 2.1M+ Benign URLs and 135k+ Fresh M
 Lexicographical Profiling: Transforms raw URLs into a multi-dimensional feature vector. This stage involves handling missing or inconsistent data, tokenization, and extraction of relevant features from URLs, such as domain names, subdomains, and URL lengths
 ## ⚡ Production-Grade Performance
 Precision Focused: Optimized to maintain a near-zero False Positive Rate (FPR), critical for reducing "security fatigue" in SOC environments.
-
 Fast Inference and integration: Real-time classification in under 10ms per URL.
 
 
