@@ -42,8 +42,9 @@ with open("suspicious_email.eml", "rb") as f:
     response = requests.post("http://127.0.0.1:5001/submi", files=files)
     
 print(response.json())
-
+```
 Sample Response
+```
 {
   "Email status": "Rejected",
   "fragments": [],
@@ -55,3 +56,4 @@ Sample Response
     "subject": "Split QR - Flexbox"
   }
 }
+```
