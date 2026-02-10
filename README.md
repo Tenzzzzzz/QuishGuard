@@ -68,20 +68,23 @@ cd ..
 python app.py
 ```
 > or if you want to reproduce from the beginning
-```
+```bash
 git clone https://github.com/Tenzzzzzz/Quishing.git
 python -m venv .venv
 source .venv/bin/activate
 cd Requirments
 pip install -r requirements.txt
 cd ..
+```
+
 Then execute the code in the Jupyter notebook
+``` bash
 python feature_extraction.py
 python the_model.py
 python app.py
 ```
 # Future Roadmap
-1-
+1- 
 2-
 3-
 # Contributing
