@@ -18,7 +18,7 @@ Fast Inference and integration: Real-time classification in under 10ms per URL.
 
 * Extraction: Scans the body and attachments for QR codes.
 
-* Transformation: Converts the extracted URL into 20+ numerical features (length, special character ratios, tld, etc.).
+* Transformation: Converts the extracted URL into 15+ numerical features (length, special character ratios, tld, etc.).
 
 * Classification: The XGBoost model calculates the "Malicious Probability".
 
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 cd ..
 python app.py
 ```
-> or if you want to reproduce from beginning->
+> or if you want to reproduce from the beginning
 ```
 git clone https://github.com/Tenzzzzzz/Quishing.git
 python -m venv .venv
