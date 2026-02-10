@@ -29,8 +29,6 @@ QuishGuard provides a lightweight Flask API for seamless integration with existi
 ### **Scan Email File**
 `POST` `/submit`
 
-Extracts URLs from QR codes within an email and returns a security verdict.
-
 #### **Request Body**
 - `file` (binary): The `.eml` file to be analyzed.
 
