@@ -5,7 +5,7 @@ QuishGuard is a high-performance machine learning pipeline designed to detect ma
 Stealth Extraction: Designed to parse complex .eml and multi-part MIME email files to extract all hidden "highly evasive" Qrs.
 
 ## 💎 High-Fidelity Threat Intelligence
-Fresh Dataset: Utilizes a curated live-stream of malicious URLs from top-tier threat intel sources (PhishTank, OpenPhish,phiusiil,mendeley and URLhaus).
+Fresh Dataset: Utilizes a curated live-stream of malicious URLs from top-tier threat intel sources (PhishTank, OpenPhish, phiusiil, mendeley and URLhaus).
 
 Massive Scale: Trained on a robust corpus of 2.1M+ Benign URLs and 135k+ Fresh Malicious URLs, ensuring the model recognizes current-day attack patterns.
 
