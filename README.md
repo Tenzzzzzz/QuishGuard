@@ -14,15 +14,15 @@ Precision Focused: Optimized to maintain a near-zero False Positive Rate (FPR), 
 
 Fast Inference and integration: Real-time classification in under 10ms per URL.
 #  System Architecture
-Ingestion: Receives an email file via the Flask API.
+* Ingestion: Receives an email file via the Flask API.
 
-Extraction: Scans the body and attachments for QR codes.
+* Extraction: Scans the body and attachments for QR codes.
 
-Transformation: Converts the extracted URL into 20+ numerical features (length, special character ratios, tld, etc.).
+* Transformation: Converts the extracted URL into 20+ numerical features (length, special character ratios, tld, etc.).
 
-Classification: The XGBoost model calculates the "Malicious Probability".
+* Classification: The XGBoost model calculates the "Malicious Probability".
 
-Response: Returns a JSON report with a safety verdict and other details about the email.
+* Response: Returns a JSON report with a safety verdict and other details about the email.
 #  API Usage
 QuishGuard provides a lightweight Flask API for seamless integration with existing SOAR or SIEM platforms.
 
@@ -56,4 +56,27 @@ Sample Response
     "subject": "Split QR - Flexbox"
   }
 }
+```
+# 📦 Installation & Setup
+```
+git clone https://github.com/Tenzzzzzz/Quishing.git
+python -m venv .venv
+source .venv/bin/activate
+cd Requirments
+pip install -r requirements.txt
+cd ..
+python app.py
+```
+> or if you want to reproduce from beginning->
+```
+git clone https://github.com/Tenzzzzzz/Quishing.git
+python -m venv .venv
+source .venv/bin/activate
+cd Requirments
+pip install -r requirements.txt
+cd ..
+Then execute the code in the Jupyter notebook
+python feature_extraction.py
+python the_model.py
+python app.py
 ```
