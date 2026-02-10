@@ -43,3 +43,15 @@ with open("suspicious_email.eml", "rb") as f:
     
 print(response.json())
 
+Sample Response
+{
+  "Email status": "Rejected",
+  "fragments": [],
+  "https://split-flexbox.com": "malicious",
+  "metadata": {
+    "domain": "test.com",
+    "sender": "test@test.com",
+    "sender_ip": "Unknown",
+    "subject": "Split QR - Flexbox"
+  }
+}
