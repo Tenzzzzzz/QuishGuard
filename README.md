@@ -62,6 +62,9 @@ Sample Response
 }
 ```
 # 📦 Installation & Setup
+### Prerequisites
+* **Python 3.10+**
+* **Google Chrome / Chromium**: Required by the `html2image` dependency to properly render and process HTML fragments. Ensure Chrome is installed on your system before proceeding.
 ```
 git clone https://github.com/Tenzzzzzz/Quishing.git
 cd Quishing
@@ -70,7 +73,7 @@ python -m venv .venv
 .venv\Scripts\activate.bat
 # Linux/Mac
 source .venv/bin/activate
-cd Requirments
+cd Requirements
 pip install -r requirements.txt
 cd ..
 python app.py
