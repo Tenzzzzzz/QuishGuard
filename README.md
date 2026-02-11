@@ -91,7 +91,7 @@ python the_model.py
 python app.py
 ```
 # Future Roadmap
-- [ ] Evasion Detection: Implement detection for advanced "broken" or "obfuscated" QR techniques.
+- [ ] Evasion Detection: Implement detection for more advanced "broken" or "obfuscated" QR techniques.
 
 - [ ] Zero-Trust Layer: Add an additional heuristic layer to reduce False Positives for known corporate domains further.
 # Contributing
