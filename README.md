@@ -60,7 +60,11 @@ Sample Response
 # 📦 Installation & Setup
 ```
 git clone https://github.com/Tenzzzzzz/Quishing.git
+cd Quishing
 python -m venv .venv
+# Windows
+.venv\Scripts\activate.bat
+# Linux/Mac
 source .venv/bin/activate
 cd Requirments
 pip install -r requirements.txt
@@ -70,22 +74,25 @@ python app.py
 > or if you want to reproduce from the beginning
 ```bash
 git clone https://github.com/Tenzzzzzz/Quishing.git
+cd Quishing
 python -m venv .venv
+# Windows
+.venv\Scripts\activate.bat
+# Linux/Mac
 source .venv/bin/activate
-cd Requirments
+cd Requirements
 pip install -r requirements.txt
 cd ..
 ```
-
 Then execute the code in the Jupyter notebook
-``` bash
+```bash
 python feature_extraction.py
 python the_model.py
 python app.py
 ```
 # Future Roadmap
-1- 
-2-
-3-
+- [ ] Evasion Detection: Implement detection for advanced "broken" or "obfuscated" QR techniques.
+
+- [ ] Zero-Trust Layer: Add an additional heuristic layer to reduce False Positives for known corporate domains further.
 # Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any feature additions or bug fixes.
