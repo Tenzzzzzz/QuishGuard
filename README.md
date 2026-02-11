@@ -14,13 +14,13 @@ Precision Focused: Optimized to maintain a near-zero False Positive Rate (FPR), 
 
 Fast Inference and integration: Real-time classification in under 10ms per URL.
 #  System Architecture
-* Ingestion: Receives an email file via the Flask API.
+* Ingestion: Receives `.eml` files via the Flask API.
 
-* Extraction: Scans the body and attachments for QR codes.
+* Extraction: Scans body and attachments for QR code objects.
 
 * Transformation: Converts the extracted URL into 15+ numerical features (length, special character ratios, tld, etc.).
 
-* Classification: The XGBoost model detects the Malicious URLs.
+* Classification: The XGBoost engine generates a safety verdict.
 
 * Response: Returns a JSON report with a safety verdict and other details about the email.
 #  API Usage
