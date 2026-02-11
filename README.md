@@ -39,7 +39,7 @@ import requests
 # Load your suspicious email file
 with open("suspicious_email.eml", "rb") as f:
     files = {"file": f}
-    response = requests.post("http://127.0.0.1:5001/submi", files=files)
+    response = requests.post("http://127.0.0.1:5001/submit", files=files)
     
 print(response.json())
 ```
