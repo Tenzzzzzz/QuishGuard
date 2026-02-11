@@ -1,7 +1,7 @@
 # 🛡️QuishGuard: Advanced QR Phishing (Quishing) Detection
 QuishGuard is a high-performance machine learning pipeline designed to detect malicious URLs embedded in QR codes. By leveraging an XGBoost classifier trained on over 2.2 million samples, it identifies phishing attempts with a precision-first approach to minimize False Positives in security environments.
 # 🚀 Key Features
-## 📧 Advanced QR-Email Parsing
+##  Advanced QR-Email Parsing
 Stealth Extraction: Designed to parse complex .eml and multi-part MIME email files to extract all hidden "highly evasive" Qrs.
 ##  High-Fidelity Threat Intelligence
 Fresh Dataset: Utilizes a curated live-stream of malicious URLs from top-tier threat intel sources (PhishTank, OpenPhish, phiusiil, mendeley and URLhaus).
