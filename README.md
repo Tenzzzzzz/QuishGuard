@@ -1,4 +1,7 @@
 # 🛡️QuishGuard: Advanced QR Phishing (Quishing) Detection
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
+[![ML: XGBoost](https://img.shields.io/badge/ML-XGBoost-green.svg?style=for-the-badge&logo=xgboost&logoColor=white)](https://xgboost.readthedocs.io/)
+[![Status: Production Ready](https://img.shields.io/badge/Status-Production--Ready-red.svg?style=for-the-badge)](https://github.com/)
 QuishGuard is a high-performance machine learning pipeline designed to detect malicious URLs embedded in QR codes. By leveraging an XGBoost classifier trained on over 2.2 million samples, it identifies phishing attempts with a precision-first approach to minimize False Positives in security environments.
 # 🚀 Key Features
 ##  Advanced QR-Email Parsing
