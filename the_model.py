@@ -48,6 +48,4 @@ else:
     print("\nDetailed Report:")
     print(classification_report(y_test, y_pred))
     model.save_model(r"model/url_detection_model.json")
-    print("\nConfusion Matrix (Look at Top Right for False Positives):")
     print(confusion_matrix(y_test, y_pred))
-
