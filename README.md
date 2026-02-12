@@ -66,8 +66,8 @@ Sample Response
 * **Python 3.10+**
 * **Google Chrome / Chromium**: Required by the `html2image` dependency to properly render and process HTML fragments. Ensure Chrome is installed on your system before proceeding.
 ```
-git clone https://github.com/Tenzzzzzz/Quishing.git
-cd Quishing
+git clone https://github.com/Tenzzzzzz/QuishGuard.git
+cd QuishGuard
 python -m venv .venv
 # Windows
 .venv\Scripts\activate.bat
@@ -80,8 +80,8 @@ python app.py
 ```
 > or if you want to reproduce from the beginning
 ```bash
-git clone https://github.com/Tenzzzzzz/Quishing.git
-cd Quishing
+git clone https://github.com/Tenzzzzzz/QuishGuard.git
+cd QuishGuard
 python -m venv .venv
 # Windows
 .venv\Scripts\activate.bat
