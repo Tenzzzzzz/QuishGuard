@@ -16,7 +16,7 @@ Lexicographical Profiling: Transforms raw URLs into a multi-dimensional feature 
 ##  Production-Grade Performance
 Precision Focused: Optimized to maintain a near-zero False Positive Rate (FPR), critical for reducing "security fatigue" in SOC environments.
 
-Fast Inference and integration: Real-time classification in under 10ms per URL.
+Fast Inference and integration: Optimized for low-latency, real-time URL classification and seamless integration into existing security pipelines
 #  System Architecture
 * Ingestion: Receives `.eml` files via the Flask API.
 
